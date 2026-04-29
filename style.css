@@ -572,6 +572,11 @@ h1 span {
 }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
 
+/* METRICS GRID COLUMN VARIANTS */
+.metrics-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.metrics-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.metrics-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+
 /* RESPONSIVE */
 @media (max-width: 640px) {
   nav { padding: 0 20px; }
@@ -583,4 +588,11 @@ h1 span {
   .card-body-inner { padding: 16px; }
   .card-footer { padding: 10px 16px; }
   .hero-stats { gap: 20px; }
+
+  /* Metrics grid: always 2 columns on mobile */
+  .metrics-grid.cols-3,
+  .metrics-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
+
+  .metric-val { font-size: 20px; }
+  .metric-label { font-size: 10px; }
 }
