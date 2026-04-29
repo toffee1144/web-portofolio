@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — AI Mentor & Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Portfolio</a>
+  <ul class="nav-links">
+    <li><a href="#projects" class="active">Projects</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  <span class="nav-badge">Open to work</span>
+</nav>
+
+<div class="wrapper">
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-glow"></div>
+    <div class="hero-label">
+      <span class="hero-label-dot"></span>
+      AI Developer & Mentor · Indonesia
+    </div>
+    <h1>Building tech that<br><span>wins on the world stage</span></h1>
+    <p class="hero-sub">I mentor student teams and build the apps behind their innovations — from edge AI on toll roads to gold-medal inventions at international expos in Tokyo, Bangkok, and Jakarta.</p>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-val">13+</div>
+        <div class="hero-stat-label">gold medals won</div>
+      </div>
+      <div>
+        <div class="hero-stat-val">5</div>
+        <div class="hero-stat-label">international competitions</div>
+      </div>
+      <div>
+        <div class="hero-stat-val">12.7M+</div>
+        <div class="hero-stat-label">vehicles logged (edge AI)</div>
+      </div>
+      <div>
+        <div class="hero-stat-val">3</div>
+        <div class="hero-stat-label">countries competed in</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="filter-bar">
+      <span class="filter-label">Filter</span>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="competition">Competition</button>
+      <button class="filter-btn" data-filter="production">Production</button>
+      <button class="filter-btn" data-filter="gold">Gold medal</button>
+    </div>
+
+    <div class="section-header">
+      <span class="section-title">Projects</span>
+      <span class="section-count">5 projects · Dec 2024 – Jan 2026</span>
+    </div>
+
+    <!-- ─── PROJECT 1: Edge AI Traffic ─── -->
+    <div class="project-card fade-up" data-tags="production" id="p1">
+      <div class="card-top" onclick="toggleCard('p1')">
+        <div class="card-icon" style="background:rgba(52,199,138,0.12);">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34c78a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/></svg>
+        </div>
+        <div class="card-meta">
+          <div class="card-title">Edge AI Traffic Monitor</div>
+          <div class="card-subtitle">Antares IoT · Internship · Karawang, West Java</div>
+          <div class="card-badges">
+            <span class="badge badge-green">Live in production</span>
+            <span class="badge badge-neutral">1+ year uptime</span>
+          </div>
+        </div>
+        <svg class="card-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="card-summary">
+        Real-time computer vision system on Raspberry Pi + Hailo AI Kit — automatically detects and logs every vehicle on a Karawang toll road. Running continuously for 1+ year with ~90% accuracy and 12.7M+ vehicles logged.
+      </div>
+      <div class="card-body">
+        <div class="card-body-inner">
+          <p class="body-section-label">Impact</p>
+          <div class="metrics-grid" style="grid-template-columns:repeat(4,1fr);">
+            <div class="metric-box">
+              <div class="metric-label">Accuracy</div>
+              <div class="metric-val">~90%</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">Uptime</div>
+              <div class="metric-val">1+ yr</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">Vehicles/day</div>
+              <div class="metric-val">~35K</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">Total logged</div>
+              <div class="metric-val">12.7M+</div>
+            </div>
+          </div>
+          <p class="body-section-label">Highlights</p>
+          <div class="highlights">
+            <div class="highlight-item">
+              <span class="highlight-dot" style="background:var(--green);"></span>
+              First automated vehicle logging system at this toll site — built from scratch with no prior implementation to reference
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-dot" style="background:var(--green);"></span>
+              CV model optimized for real-time inference on low-power edge hardware — one full traffic direction monitored continuously
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-dot" style="background:var(--green);"></span>
+              Dockerized for zero-friction replication — plug into any new toll site without reconfiguration
+            </div>
+          </div>
+          <div class="tech-stack">
+            <p class="body-section-label">Tech Stack</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Raspberry Pi</span>
+              <span class="tech-tag">Hailo AI Kit</span>
+              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Edge AI</span>
+              <span class="tech-tag">Machine Learning</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-footer-text">Dec 2024 – Mar 2025 · Karawang, West Java · Internship</span>
+          <span class="timeline-date">2025</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── PROJECT 2: JDIE Tokyo ─── -->
+    <div class="project-card fade-up" data-tags="competition gold" id="p2">
+      <div class="card-top" onclick="toggleCard('p2')">
+        <div class="card-icon" style="background:var(--gold-bg);">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+        </div>
+        <div class="card-meta">
+          <div class="card-title">JDIE Tokyo 2025</div>
+          <div class="card-subtitle">Freelance · Tokyo, Japan · 5–6 July 2025</div>
+          <div class="card-badges">
+            <span class="badge badge-silver">Silver medal</span>
+            <span class="badge badge-neutral">Tokyo, Japan</span>
+          </div>
+        </div>
+        <svg class="card-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="card-summary">
+        Mentored and built Kotlin Android apps for two student teams at an international science competition in Tokyo. Both competed internationally — one brought home a silver medal.
+      </div>
+      <div class="card-body">
+        <div class="card-body-inner">
+          <p class="body-section-label">Impact</p>
+          <div class="metrics-grid" style="grid-template-columns:repeat(3,1fr);">
+            <div class="metric-box">
+              <div class="metric-label">Teams</div>
+              <div class="metric-val">2</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">Apps Built</div>
+              <div class="metric-val">2</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">Award</div>
+              <div class="metric-val" style="font-size:18px;">Silver</div>
+            </div>
+          </div>
+          <p class="body-section-label">Projects Built</p>
+          <div class="sub-projects">
+            <div class="sub-project">
+              <div class="sub-project-head">
+                <span class="sub-project-name">Smart Irrigation System</span>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="badge badge-silver">Silver medal</span>
+                </div>
+              </div>
+              <div class="sub-project-body">
+                <p class="sub-project-desc">Kotlin Android app + AI consultation system for farmers — automates water and fertilizer scheduling, daily soil reports, and AI farming advisory without requiring farmers to be on-site.</p>
+                <p class="sub-project-team">Team: Arga Fatah Mulyanto, Kalinda Zafina Arghya, Aglaia Zhyakeira Bakri</p>
+                <div class="tags"><span class="tag">AI advisory</span><span class="tag">Irrigation automation</span><span class="tag">IoT sensors</span></div>
+              </div>
+            </div>
+            <div class="sub-project">
+              <div class="sub-project-head">
+                <span class="sub-project-name">Modern Scarecrow</span>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="badge badge-neutral">Competitor</span>
+                </div>
+              </div>
+              <div class="sub-project-body">
+                <p class="sub-project-desc">Kotlin Android app for a remote-controlled smart pest deterrent — AI detects movement patterns of birds, insects, and rodents, then makes autonomous decisions to protect crops.</p>
+                <p class="sub-project-team">Team: Habilla Zaira Madjid, Ennoia Aidan Pratharna, Daris Hanifta Teguh</p>
+                <div class="tags"><span class="tag">Computer Vision</span><span class="tag">Autonomous control</span><span class="tag">Pest detection</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="tech-stack">
+            <p class="body-section-label">Tech Stack</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Kotlin</span>
+              <span class="tech-tag">Android</span>
+              <span class="tech-tag">Arduino IDE</span>
+              <span class="tech-tag">AI Integration</span>
+              <span class="tech-tag">IoT</span>
+              <span class="tech-tag">Computer Vision</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-footer-text">July 2025 · Tokyo, Japan · Freelance</span>
+          <span class="timeline-date">2025</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── PROJECT 3: OPSI 2025 ─── -->
+    <div class="project-card fade-up" data-tags="competition" id="p3">
+      <div class="card-top" onclick="toggleCard('p3')">
+        <div class="card-icon" style="background:var(--purple-bg);">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9d8ff0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="card-meta">
+          <div class="card-title">OPSI 2025 — National Science Olympiad</div>
+          <div class="card-subtitle">Freelance · SMP Mentari Intercultural School Jakarta · Oct 2025</div>
+          <div class="card-badges">
+            <span class="badge badge-purple">National finalist</span>
+            <span class="badge badge-neutral">Top 4% nationally</span>
+          </div>
+        </div>
+        <svg class="card-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="card-summary">
+        Mentored and built the mobile app for a team that reached the national final at OPSI 2025 — placing in the top 25 out of 642 teams in the SMP IPT category. An upgraded version of the JDIE Tokyo silver medal project.
+      </div>
+      <div class="card-body">
+        <div class="card-body-inner">
+          <div class="alert-banner" style="background:rgba(245,166,35,0.07);border:1px solid var(--gold-border);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+            <p style="color:#c4902d;font-size:13px;">Upgraded version of the <strong style="color:var(--gold);">JDIE Tokyo 2025 silver medal project</strong> — evolved from a competition prototype into a market-ready product ready for commercial sale.</p>
+          </div>
+          <p class="body-section-label">Impact</p>
+          <div class="metrics-grid" style="grid-template-columns:repeat(3,1fr);">
+            <div class="metric-box">
+              <div class="metric-label">Total Teams</div>
+              <div class="metric-val">642</div>
+              <div class="metric-sub">SMP IPT category</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">Rank</div>
+              <div class="metric-val">Top 25</div>
+              <div class="metric-sub">out of 642</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">Stage</div>
+              <div class="metric-val" style="font-size:16px;">Market</div>
+              <div class="metric-sub">ready to sell</div>
+            </div>
+          </div>
+          <p class="body-section-label">What's New vs JDIE Version</p>
+          <div class="highlights" style="margin-bottom:24px;">
+            <div class="highlight-item">
+              <span class="highlight-dot" style="background:var(--purple);"></span>
+              Added pest and plant disease detection with AI-driven autonomous decision-making
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-dot" style="background:var(--purple);"></span>
+              Expanded sensor coverage — water, fertilizer, and soil humidity all integrated
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-dot" style="background:var(--purple);"></span>
+              Matured from prototype into a holistic, ready-to-sell commercial product
+            </div>
+          </div>
+          <div class="tech-stack">
+            <p class="body-section-label">Tech Stack</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Kotlin</span>
+              <span class="tech-tag">Android</span>
+              <span class="tech-tag">Arduino IDE</span>
+              <span class="tech-tag">AI Integration</span>
+              <span class="tech-tag">IoT</span>
+              <span class="tech-tag">Computer Vision</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-footer-text">Oct 2025 · Jakarta, Indonesia · Freelance</span>
+          <span class="timeline-date">2025</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── PROJECT 4: IID 2025 ─── -->
+    <div class="project-card fade-up" data-tags="competition gold" id="p4">
+      <div class="card-top" onclick="toggleCard('p4')">
+        <div class="card-icon" style="background:var(--gold-bg);">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+        </div>
+        <div class="card-meta">
+          <div class="card-title">IID 2025 — International Invention Exhibition</div>
+          <div class="card-subtitle">Freelance · SMP Mentari Intercultural School Jakarta · Sep 2025</div>
+          <div class="card-badges">
+            <span class="badge badge-gold">4× Gold medal</span>
+            <span class="badge badge-purple">2× Special award</span>
+            <span class="badge badge-neutral">SMESCO Jakarta</span>
+          </div>
+        </div>
+        <svg class="card-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="card-summary">
+        Mentored and built apps for four student teams at IID 2025 — 486 teams from 21 countries at SMESCO Jakarta. All four teams won gold, with two earning special international awards.
+      </div>
+      <div class="card-body">
+        <div class="card-body-inner">
+          <p class="body-section-label">Impact</p>
+          <div class="metrics-grid" style="grid-template-columns:repeat(4,1fr);">
+            <div class="metric-box">
+              <div class="metric-label">Competing teams</div>
+              <div class="metric-val">486</div>
+              <div class="metric-sub">21 countries</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">Gold medals</div>
+              <div class="metric-val">4/4</div>
+              <div class="metric-sub">all teams won</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">Special awards</div>
+              <div class="metric-val">2</div>
+              <div class="metric-sub">international</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">Sinuscan accuracy</div>
+              <div class="metric-val">100%</div>
+              <div class="metric-sub">20 patients</div>
+            </div>
+          </div>
+          <p class="body-section-label">Projects Built</p>
+          <div class="sub-projects">
+            <div class="sub-project">
+              <div class="sub-project-head">
+                <span class="sub-project-name">Vestagate</span>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="badge badge-gold">Gold</span>
+                  <span class="badge badge-purple">Best Innovation — Thailand</span>
+                  <span class="badge badge-accent">Web-based</span>
+                </div>
+              </div>
+              <div class="sub-project-body">
+                <p class="sub-project-desc">Web-based AI image analysis for worksite gates — automatically scans each worker entering the site and detects whether they are wearing complete PPE without manual checking.</p>
+                <div class="tags"><span class="tag">AI image analysis</span><span class="tag">PPE detection</span><span class="tag">Real-time scanning</span></div>
+              </div>
+            </div>
+            <div class="sub-project">
+              <div class="sub-project-head">
+                <span class="sub-project-name">Sinuscan</span>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="badge badge-gold">Gold</span>
+                  <span class="badge badge-purple">Most Promising Future Solution</span>
+                  <span class="badge badge-accent">Mobile app</span>
+                </div>
+              </div>
+              <div class="sub-project-body">
+                <p class="sub-project-desc">AI-powered sinusitis detection app — takes a sinus image and combines it with a symptom questionnaire to diagnose non-invasively. Achieved 100% accuracy across 20 hospital patients.</p>
+                <div class="tags"><span class="tag">AI image analysis</span><span class="tag">Questionnaire</span><span class="tag">Hospital-tested</span><span class="tag" style="background:rgba(52,199,138,0.1);color:var(--green);border-color:rgba(52,199,138,0.2);">100% accuracy</span></div>
+              </div>
+            </div>
+            <div class="sub-project">
+              <div class="sub-project-head">
+                <span class="sub-project-name">Growsure</span>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="badge badge-gold">Gold</span>
+                  <span class="badge badge-accent">Mobile app + IoT</span>
+                </div>
+              </div>
+              <div class="sub-project-body">
+                <p class="sub-project-desc">Smart IoT baby scale paired with a mobile app — reads weight, estimates height from a photo using AI, plots the baby on a WHO growth chart, and gives AI-generated parenting feedback. Field-tested at Posyandu Sedap Malam, Kostrad, South Jakarta.</p>
+                <div class="tags"><span class="tag">IoT smart scale</span><span class="tag">AI height estimation</span><span class="tag">Growth chart</span><span class="tag">Stunting detection</span></div>
+              </div>
+            </div>
+            <div class="sub-project">
+              <div class="sub-project-head">
+                <span class="sub-project-name">Maggify</span>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="badge badge-gold">Gold</span>
+                  <span class="badge badge-accent">Mobile app + IoT</span>
+                </div>
+              </div>
+              <div class="sub-project-body">
+                <p class="sub-project-desc">Smart maggot cultivation system for sustainable waste management. AI chatbot guides farming decisions while IoT sensors auto-trigger fans (high temp/ammonia) and sprinklers (low humidity). Fully automated or manual control via app.</p>
+                <div class="tags"><span class="tag">AI chatbot</span><span class="tag">IoT automation</span><span class="tag">Temperature sensing</span><span class="tag">Ammonia sensing</span><span class="tag">Manual override</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="tech-stack">
+            <p class="body-section-label">Tech Stack</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Kotlin</span>
+              <span class="tech-tag">Android</span>
+              <span class="tech-tag">Web (Vestagate)</span>
+              <span class="tech-tag">Arduino IDE</span>
+              <span class="tech-tag">AI image processing</span>
+              <span class="tech-tag">AI chatbot</span>
+              <span class="tech-tag">IoT automation</span>
+              <span class="tech-tag">Computer Vision</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-footer-text">11–14 Sep 2025 · SMESCO Jakarta · Freelance</span>
+          <span class="timeline-date">2025</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── PROJECT 5: IPITEx Bangkok 2026 ─── -->
+    <div class="project-card fade-up" data-tags="competition gold" id="p5">
+      <div class="card-top" onclick="toggleCard('p5')">
+        <div class="card-icon" style="background:var(--gold-bg);">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+        </div>
+        <div class="card-meta">
+          <div class="card-title">IPITEx Bangkok 2026</div>
+          <div class="card-subtitle">Freelance · MISJ & BSJ · Bangkok, Thailand · 5–9 Jan 2026</div>
+          <div class="card-badges">
+            <span class="badge badge-gold">5× Gold medal</span>
+            <span class="badge badge-silver">4× Silver medal</span>
+            <span class="badge badge-purple">3× Special award</span>
+            <span class="badge badge-neutral">883 teams · 24 countries</span>
+          </div>
+        </div>
+        <svg class="card-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="card-summary">
+        Mentored and built apps for 10 MISJ teams and 1 BSJ team at Asia's largest invention expo — BITEC Bangkok, 883 teams from 24 countries. Every single team medalled: 5 golds (including 3 special international awards) and 4 silvers.
+      </div>
+      <div class="card-body">
+        <div class="card-body-inner">
+          <p class="body-section-label">Impact</p>
+          <div class="metrics-grid" style="grid-template-columns:repeat(4,1fr);">
+            <div class="metric-box">
+              <div class="metric-label">Competing teams</div>
+              <div class="metric-val">883</div>
+              <div class="metric-sub">24 countries</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">Gold medals</div>
+              <div class="metric-val">5</div>
+              <div class="metric-sub">MISJ teams</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">Silver medals</div>
+              <div class="metric-val">4</div>
+              <div class="metric-sub">MISJ teams</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-label">Special awards</div>
+              <div class="metric-val">3</div>
+              <div class="metric-sub">international</div>
+            </div>
+          </div>
+
+          <!-- GOLD -->
+          <p class="body-section-label">🥇 Gold Medal Projects</p>
+          <div class="sub-projects">
+            <div class="sub-project">
+              <div class="sub-project-head">
+                <span class="sub-project-name">Critter Coach</span>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="badge badge-gold">Gold</span>
+                  <span class="badge badge-accent">Mobile app</span>
+                </div>
+              </div>
+              <div class="sub-project-body">
+                <p class="sub-project-desc">AI-powered self-care app for teen athletes — builds discipline and consistency through personalized coaching routines. Praised by international judges for novelty, solution relevance, and presentation quality.</p>
+                <p class="sub-project-team">Kalinda, Arga Fattah, Jessica Nauli, Luke Kumala, Jessica Zahra</p>
+                <div class="tags"><span class="tag">AI coaching</span><span class="tag">Sports tech</span><span class="tag">Teen wellness</span></div>
+              </div>
+            </div>
+            <div class="sub-project">
+              <div class="sub-project-head">
+                <span class="sub-project-name">Traffigo</span>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="badge badge-gold">Gold</span>
+                  <span class="badge badge-purple">Special Award — Nizhny Novgorod State Technical University</span>
+                  <span class="badge badge-green">International Young Inventor Award</span>
+                </div>
+              </div>
+              <div class="sub-project-body">
+                <p class="sub-project-desc">Mobile app for school traffic management and student pickup coordination — GPS tracking and real-time notifications to cut congestion during school pickup hours. Piloted at 3 schools in South Jakarta.</p>
+                <p class="sub-project-team">Erlangga, Arga, Zihny, Fathir, Jason, Tala</p>
+                <div class="tags"><span class="tag">GPS tracking</span><span class="tag">Real-time notifications</span><span class="tag">School logistics</span></div>
+              </div>
+            </div>
+            <div class="sub-project">
+              <div class="sub-project-head">
+                <span class="sub-project-name">Dermatect</span>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="badge badge-gold">Gold</span>
+                  <span class="badge badge-purple">Special Award — Hongkong Dream Technology</span>
+                  <span class="badge badge-accent">Mobile app</span>
+                </div>
+              </div>
+              <div class="sub-project-body">
+                <p class="sub-project-desc">Non-invasive melanoma screening app using automated machine learning (AML) — takes a skin image and classifies risk without any physical examination. Clinically tested at RS Kanker Dharmais, Jakarta.</p>
+                <p class="sub-project-team">Zaira, Daris, Bama, Sophie, Aston, Alaric</p>
+                <div class="tags"><span class="tag">AML image classification</span><span class="tag">Cancer screening</span><span class="tag">Hospital-tested</span></div>
+              </div>
+            </div>
+            <div class="sub-project">
+              <div class="sub-project-head">
+                <span class="sub-project-name">TempGo</span>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="badge badge-gold">Gold</span>
+                  <span class="badge badge-accent">Mobile app + IoT</span>
+                </div>
+              </div>
+              <div class="sub-project-body">
+                <p class="sub-project-desc">Smart food delivery system with integrated heating and cooling mechanisms — IoT sensors maintain food quality throughout transit, controlled via mobile app.</p>
+                <p class="sub-project-team">William, Aleph, Laurel, Gifta, Benjamin</p>
+                <div class="tags"><span class="tag">IoT temperature control</span><span class="tag">Food delivery</span><span class="tag">Smart logistics</span></div>
+              </div>
+            </div>
+            <div class="sub-project">
+              <div class="sub-project-head">
+                <span class="sub-project-name">SoilPin</span>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="badge badge-gold">Gold</span>
+                  <span class="badge badge-accent">IoT device</span>
+                </div>
+              </div>
+              <div class="sub-project-body">
+                <p class="sub-project-desc">Sustainability-focused soil health monitor — embedded sensors improve farming efficiency and soil quality, reducing resource waste in agricultural settings.</p>
+                <p class="sub-project-team">Muhammad Argi, Shah Jehan, Nazeer Omar, Baraputra Nathan</p>
+                <div class="tags"><span class="tag">Soil sensing</span><span class="tag">AgriTech</span><span class="tag">Sustainability</span></div>
+              </div>
+            </div>
+            <div class="sub-project">
+              <div class="sub-project-head">
+                <span class="sub-project-name">Motivision <span class="sub-project-school">· British School Jakarta</span></span>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="badge badge-gold">Gold</span>
+                  <span class="badge badge-green">KONI-approved</span>
+                  <span class="badge badge-accent">Web app</span>
+                </div>
+              </div>
+              <div class="sub-project-body">
+                <p class="sub-project-desc">AI-powered web platform for taekwondo athlete development — performance monitoring, motivation tracking, and data-driven coach evaluation. Approved by Indonesia's National Sports Committee (KONI) as competition-ready.</p>
+                <p class="sub-project-team">Ennoia Aidan, Faliya Alikha Kunaefi, Alexa Putri Satyawan, Almira Dianizza, Lim Dong Hyun</p>
+                <div class="tags"><span class="tag">AI performance tracking</span><span class="tag">Sports coaching</span><span class="tag">KONI-approved</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SILVER -->
+          <p class="body-section-label">🥈 Silver Medal Projects</p>
+          <div class="sub-projects">
+            <div class="sub-project">
+              <div class="sub-project-head">
+                <span class="sub-project-name">Teacher's Pet</span>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="badge badge-silver">Silver</span>
+                  <span class="badge badge-accent">App + IoT</span>
+                </div>
+              </div>
+              <div class="sub-project-body">
+                <p class="sub-project-desc">Automated student attendance system — students simply stand in front of a camera, face recognition scans and identifies them, and their attendance is marked instantly. No manual check-in needed.</p>
+                <p class="sub-project-team">Brind, Mubashir, Nicholas Satriyo</p>
+                <div class="tags"><span class="tag">Face recognition</span><span class="tag">Attendance automation</span><span class="tag">IoT camera</span></div>
+              </div>
+            </div>
+            <div class="sub-project">
+              <div class="sub-project-head">
+                <span class="sub-project-name">Power Punch</span>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="badge badge-silver">Silver</span>
+                  <span class="badge badge-accent">IoT</span>
+                </div>
+              </div>
+              <div class="sub-project-body">
+                <p class="sub-project-desc">Energy-generating smart punching bag — converts the kinetic energy from punches into electricity. A sustainability-meets-fitness innovation that turns training sessions into power generation.</p>
+                <p class="sub-project-team">Bona, Harini, Luke Kim, Bella, Monica</p>
+                <div class="tags"><span class="tag">Kinetic energy harvesting</span><span class="tag">Smart fitness</span><span class="tag">Sustainability</span></div>
+              </div>
+            </div>
+            <div class="sub-project">
+              <div class="sub-project-head">
+                <span class="sub-project-name">Pneumocheck</span>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="badge badge-silver">Silver</span>
+                  <span class="badge badge-accent">AIoT + App</span>
+                </div>
+              </div>
+              <div class="sub-project-body">
+                <p class="sub-project-desc">Pneumonia detection device that listens to a patient's breathing pattern and uses AI to determine whether pneumonia is present. Results are monitored live via app, with full session history stored for doctors to review.</p>
+                <p class="sub-project-team">Aizka, Leika, Mikha, Keia, Defi, Audrey</p>
+                <div class="tags"><span class="tag">Breath analysis</span><span class="tag">Pneumonia detection</span><span class="tag">Live monitoring</span><span class="tag">Medical AIoT</span></div>
+              </div>
+            </div>
+            <div class="sub-project">
+              <div class="sub-project-head">
+                <span class="sub-project-name">Agronome</span>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="badge badge-silver">Silver</span>
+                  <span class="badge badge-purple">Special Award — Universiti Teknologi Mara</span>
+                  <span class="badge badge-accent">Drone + App + AI</span>
+                </div>
+              </div>
+              <div class="sub-project-body">
+                <p class="sub-project-desc">AI-powered agricultural drone that flies over crop fields and analyzes camera input in real time — detecting water stress, crop diseases, and field conditions. The companion app provides a live drone feed and analysis results, plus an AI chatbot for disease diagnosis and crop care consultation.</p>
+                <p class="sub-project-team">Andrue, Syabil, Akmal, Reisya, Zaky, Arkaan, Rega</p>
+                <div class="tags"><span class="tag">Agricultural drone</span><span class="tag">Crop disease detection</span><span class="tag">Live aerial view</span><span class="tag">AI chatbot</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-stack">
+            <p class="body-section-label">Tech Stack</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Kotlin</span>
+              <span class="tech-tag">Android</span>
+              <span class="tech-tag">Web (Motivision, Traffigo)</span>
+              <span class="tech-tag">Arduino IDE</span>
+              <span class="tech-tag">AI image processing</span>
+              <span class="tech-tag">AML / Machine Learning</span>
+              <span class="tech-tag">IoT</span>
+              <span class="tech-tag">GPS tracking</span>
+              <span class="tech-tag">Face recognition</span>
+              <span class="tech-tag">Drone + CV</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-footer-text">5–9 Jan 2026 · BITEC, Bangkok, Thailand · Freelance</span>
+          <span class="timeline-date">2026</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- PAGE FOOTER -->
+  <footer class="page-footer">
+    <span class="page-footer-text">AI Developer & Mentor · Indonesia · Dec 2024 – Jan 2026</span>
+    <span class="page-footer-text">5 projects · 13+ gold medals · 3 countries</span>
+  </footer>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
